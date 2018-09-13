@@ -1,5 +1,5 @@
-# moviematch-graphql-server
-GraphQL server for moviematch react application
+# moviematch-graphql-server (GraphQL Wrapper of the MovieDB API)
+GraphQL server for moviematch react application *[powered by themoviedb.org](https://themoviedb.org)*
 
 ## Deployed with Now [Click to play with API](https://moviematch-graphql-jzjfsgbwzd.now.sh/)
 
