@@ -17,13 +17,17 @@
   },
   "homepage": "https://github.com/yeondam88/moviematch-graphql-server#readme",
   "dependencies": {
+    "apollo-server": "^2.0.7",
     "axios": "^0.18.0",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.16.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
+    "lodash": "^4.17.11",
     "nodemon": "^1.18.4"
   }
 }

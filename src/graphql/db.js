@@ -153,6 +153,25 @@ export const searchMovies = async query => {
 };
 
 /**
+ * GET MOVIE IMAGES by ID
+ * @param {number} id
+ */
+export const getMovieImages = async id => {
+  try {
+    const { data } = await axios.get(`${BASE_URL}/movie/${id}/images`, {
+      params: {
+        api_key: "86fce8bfeb204a7e8c71d14290ae5016",
+        language: "en-US",
+        include_image_language: "en"
+      }
+    });
+    return data;
+  } catch (err) {
+    Promise.reject(err);
+  }
+};
+
+/**
  * GET MOVIE DETAIL by ID
  * @param {number} id
  */

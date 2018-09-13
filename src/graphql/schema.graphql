@@ -54,6 +54,24 @@ type RecommendationMovies {
   release_date: String!
 }
 
+type Backdrop {
+  file_path: String!
+  height: Int!
+  width: Int!
+}
+
+type Poster {
+  file_path: String!
+  height: Int!
+  width: Int!
+}
+
+type MovieImage {
+  id: Int!
+  backdrops: [Backdrop!]!
+  posters: [Poster!]!
+}
+
 type Query {
   trendMovies(time_window: String!, media_type: String!): [Movie!]!
   nowPlayingMovies: [Movie!]!
@@ -61,6 +79,7 @@ type Query {
   movieRecommendations(id: Int!): [RecommendationMovies!]!
   popularMovies: [Movie!]!
   topRatedMovies: [Movie!]!
+  movieImages: MovieImage!
   movieDetail(id: Int!): MovieDetail!
   search(query: String!): [Movie!]!
 }

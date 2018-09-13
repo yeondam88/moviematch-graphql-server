@@ -6,6 +6,7 @@ import {
   getMovieDetail,
   getPopularMovies,
   getTopRatedMovies,
+  getMovieImages,
   searchMovies
 } from "./db";
 
@@ -17,6 +18,7 @@ const resolvers = {
     upcomingMovies: () => getupcomingMovies(),
     movieRecommendations: (_, { id }) => getMovieRecommendation(id),
     movieDetail: (_, { id }) => getMovieDetail(id),
+    movieImages: (_, { id }) => getMovieImages(id),
     popularMovies: () => getPopularMovies(),
     topRatedMovies: () => getTopRatedMovies(),
     search: (_, { query }) => searchMovies(query)
